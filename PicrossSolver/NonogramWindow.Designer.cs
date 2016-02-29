@@ -32,14 +32,12 @@
             this.topRightPanel = new System.Windows.Forms.Panel();
             this.bottomLeftPanel = new System.Windows.Forms.Panel();
             this.mainPuzzlePanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.topLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // topLeftPanel
             // 
-            this.topLeftPanel.Controls.Add(this.pictureBox1);
+            this.topLeftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.topLeftPanel.BackColor = System.Drawing.Color.Red;
             this.topLeftPanel.Location = new System.Drawing.Point(12, 12);
             this.topLeftPanel.Name = "topLeftPanel";
             this.topLeftPanel.Size = new System.Drawing.Size(45, 44);
@@ -47,7 +45,9 @@
             // 
             // topRightPanel
             // 
+            this.topRightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.topRightPanel.AutoSize = true;
+            this.topRightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.topRightPanel.Location = new System.Drawing.Point(64, 13);
             this.topRightPanel.Name = "topRightPanel";
             this.topRightPanel.Size = new System.Drawing.Size(208, 43);
@@ -55,7 +55,9 @@
             // 
             // bottomLeftPanel
             // 
+            this.bottomLeftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bottomLeftPanel.AutoSize = true;
+            this.bottomLeftPanel.BackColor = System.Drawing.Color.Yellow;
             this.bottomLeftPanel.Location = new System.Drawing.Point(12, 62);
             this.bottomLeftPanel.Name = "bottomLeftPanel";
             this.bottomLeftPanel.Size = new System.Drawing.Size(45, 188);
@@ -63,27 +65,18 @@
             // 
             // mainPuzzlePanel
             // 
+            this.mainPuzzlePanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainPuzzlePanel.AutoSize = true;
+            this.mainPuzzlePanel.BackColor = System.Drawing.Color.Lime;
             this.mainPuzzlePanel.Location = new System.Drawing.Point(64, 63);
             this.mainPuzzlePanel.Name = "mainPuzzlePanel";
             this.mainPuzzlePanel.Size = new System.Drawing.Size(208, 187);
             this.mainPuzzlePanel.TabIndex = 3;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 37);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // NonogramWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.bottomLeftPanel);
@@ -93,8 +86,6 @@
             this.Name = "NonogramWindow";
             this.Text = "NonogramWindow";
             this.Load += new System.EventHandler(this.NonogramWindow_Load);
-            this.topLeftPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +97,5 @@
         private System.Windows.Forms.Panel topRightPanel;
         private System.Windows.Forms.Panel bottomLeftPanel;
         private System.Windows.Forms.Panel mainPuzzlePanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
